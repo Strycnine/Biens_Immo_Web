@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="contr">
+    <h2>Analyses des données</h2>
+  </div>
+  <div class="upload_form_cont">
+    <h2>Nombre de biens sans balcon :</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre de biens : </th>
+          <th>{{ nb_biens }}</th>
+        </tr>
+      </thead>
+    </table>
+
+    <h2>Ecart type</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ecart type : </th>
+          <th>{{ ecart }}</th>
+        </tr>
+      </thead>
+    </table>
+
+    <h2>Prix moyen des biens : </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ville</th>
+          <th>Prix moyen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in moy_ville %}
+        <tr>
+          <td>{{ i.ville }}</td>
+          <td>{{ i.prix_tva_normale }} €</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
