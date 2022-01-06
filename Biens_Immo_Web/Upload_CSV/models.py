@@ -25,3 +25,6 @@ class Immo(models.Model):
     adresse = models.CharField(max_length=100)
     promoteur = models.CharField(max_length=50)
     date_extraction = models.CharField(max_length=20)
+
+    # def __str__(self):
+    #     return self.id, self.id_lot, round(self.prix_tva_normale,2)
