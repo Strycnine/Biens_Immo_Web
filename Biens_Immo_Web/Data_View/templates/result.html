@@ -6,6 +6,12 @@
     <h2>Analyses des données</h2>
   </div>
   <div class="upload_form_cont">
+    <form id="upload_form" action="/" method="POST">
+      {% csrf_token %}
+      <div>
+        <input type="submit" value="Envoyer un mail"/>
+      </div>
+    </form>
     <h2>Nombre de biens sans balcon :</h2>
     <table>
       <thead>
@@ -21,7 +27,7 @@
       <thead>
         <tr>
           <th>Ecart type : </th>
-          <th>{{ ecart }}</th>
+          <th>{{ ecart }} €</th>
         </tr>
       </thead>
     </table>

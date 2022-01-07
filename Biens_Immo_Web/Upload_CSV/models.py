@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Immo(models.Model):
     id = models.IntegerField(primary_key=True)
@@ -26,5 +27,8 @@ class Immo(models.Model):
     promoteur = models.CharField(max_length=50)
     date_extraction = models.CharField(max_length=20)
 
-    # def __str__(self):
-    #     return self.id, self.id_lot, round(self.prix_tva_normale,2)
+
+class Contact(models.Model):
+    sujet = models.CharField(max_length=64,null=True)
+    message = models.CharField(max_length=256,null=True)
+    destinataire = models.CharField(max_length=32,null=True)
