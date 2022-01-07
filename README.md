@@ -11,18 +11,18 @@
 ## Utilisation :
 
   1. Récupérez le [repository](https://github.com/Strycnine/Biens_Immo_Web/archive/refs/heads/main.zip).
-  1. installez le [Requirements.txt](./requirements.txt).
-  1. Allez dans le fichier `Biens_Immo_Web\Biens_Immo_Web\setting.py`
-  1. Modifier selon vos besoin les entrées suivante :
+  2. installez le [Requirements.txt](./requirements.txt).
+  3. Allez dans le fichier `Biens_Immo_Web\Biens_Immo_Web\setting.py`
+  4. Modifier selon vos besoin les entrées suivante :
   ```python
   EMAIL_HOST = 'smtp.gmail.com' # A modifier suivant votre boite mail
   EMAIL_HOST_USER = 'votre mail'
   EMAIL_HOST_PASSWORD = 'votre mot de passe'
   ```
-  1. Ouvrez un shell a partir du dossier `Biens_Immo_Web`.
-  1. Lancez la commande `python manage.py runserver`.
-  1. Ouvrez votre navigateur -> http://127.0.0.1:8000
-  1. It's GOOD ! :upside_down_face:
+  5. Ouvrez un shell a partir du dossier `Biens_Immo_Web`.
+  6. Lancez la commande `python manage.py runserver`.
+  7. Ouvrez votre navigateur -> http://127.0.0.1:8000
+  8. It's GOOD ! :upside_down_face:
 
 ---
 
